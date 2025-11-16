@@ -1,0 +1,73 @@
+/* GLOBAL COLORS */
+:root {
+    --dark: #0d0d0d;
+    --red: #c40000;
+    --text: #ffffff;
+    --headline-font: 'Raleway', sans-serif;
+}
+
+body { background: var(--dark); color: var(--text); margin: 0; font-family: Arial, sans-serif; }
+a { color: var(--red); }
+
+/* HEADER */
+header { text-align: center; padding: 60px 20px; }
+.logo { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+.hero-title { font-family: var(--headline-font); font-size: 36px; }
+.hero-buttons { margin-top: 20px; }
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background: var(--red);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ABOUT */
+.about { padding: 40px 20px; text-align: center; }
+.about h2 { font-family: var(--headline-font); }
+
+/* CONTACT */
+footer { text-align: center; padding: 40px 20px; }
+
+/* SIGNUP PAGE */
+.signup-page { display: flex; justify-content: center; align-items: center; height: 100vh; }
+.signup-container {
+    background: #111;
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+.signup-container h1 {
+    font-family: var(--headline-font);
+    margin-bottom: 20px;
+}
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* PROGRAMS GRID */
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.program-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--red);
+}
+.program-card h3 {
+    font-family: var(--headline-font);
+} 
